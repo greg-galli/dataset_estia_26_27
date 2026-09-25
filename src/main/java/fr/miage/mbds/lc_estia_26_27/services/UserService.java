@@ -3,7 +3,6 @@ package fr.miage.mbds.lc_estia_26_27.services;
 import fr.miage.mbds.lc_estia_26_27.dtos.UserDTO;
 import fr.miage.mbds.lc_estia_26_27.entities.User;
 import fr.miage.mbds.lc_estia_26_27.mappers.UserMSMapper;
-import fr.miage.mbds.lc_estia_26_27.mappers.UserMapper;
 import fr.miage.mbds.lc_estia_26_27.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

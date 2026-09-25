@@ -17,6 +17,9 @@ public class User {
 
     private String email;
 
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Address address;
+
     public User(Long id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;

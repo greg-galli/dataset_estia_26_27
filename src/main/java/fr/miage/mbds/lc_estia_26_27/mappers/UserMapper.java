@@ -9,23 +9,27 @@ import java.util.List;
 @Component
 public class UserMapper {
 
-    public UserDTO toUserDTO(User user)
-    {
-        return new UserDTO(user.getId(), user.getFirstName(), user.getLastName());
-    }
-
-    public User toUserEntity(UserDTO UserDTO)
-    {
-        return new User(null, UserDTO.getFirstName(), UserDTO.getLastName());
-    }
-
-    public List<UserDTO> toUserDTOList(List<User> userList)
-    {
-        return userList.stream().map(this::toUserDTO).toList();
-    }
-
-    public List<User> toUserEntityList(List<UserDTO> UserDTOList)
-    {
-        return UserDTOList.stream().map(this::toUserEntity).toList();
-    }
+//    public UserDTO toUserDTO(User user)
+//    {
+//        return User.builder().id(user.getId())
+//                .firstName(user.getFirstName())
+//                .lastName(user.getLastName())
+//                .email(user.getEmail())
+//                .address(user.getAddress());
+//    }
+//
+//    public User toUserEntity(UserDTO UserDTO)
+//    {
+//        return new User(null, UserDTO.getFirstName(), UserDTO.getLastName());
+//    }
+//
+//    public List<UserDTO> toUserDTOList(List<User> userList)
+//    {
+//        return userList.stream().map(this::toUserDTO).toList();
+//    }
+//
+//    public List<User> toUserEntityList(List<UserDTO> UserDTOList)
+//    {
+//        return UserDTOList.stream().map(this::toUserEntity).toList();
+//    }
 }
